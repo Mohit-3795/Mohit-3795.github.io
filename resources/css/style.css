@@ -24,7 +24,7 @@ html {
 
 header{
     background-color: #001205;
-    background-image: linear-gradient(rgba(0, 18, 5, 0.507), rgba(0, 18, 5, 0.507)), url(img/2.jpg);
+    background-image: linear-gradient(rgba(0, 18, 5, 0.678), rgba(0, 18, 5, 0.678)), url(img/2.jpg);
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -42,11 +42,40 @@ header{
 }
 
 section {
-    padding: 80px 0;
+    padding: 50px 0;
 }
 
 .box{
     padding: 1%
+}
+
+
+.row p{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.section-logo{
+    width:100px;
+    height: auto;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+section .row{
+    margin-top: 40px;
+}
+
+/* Project photo */
+.project-photo {
+    width: 100px;
+    height: auto;
+    border-radius: 500px;
+    -webkit-border-radius: 500px;
+    -moz-border-radius: 500px;
+    -ms-border-radius: 500px;
+    -o-border-radius: 500px;
 }
 
 
@@ -80,7 +109,7 @@ h3 {
 }
 
 h4{
-    font-size: 100%;
+    font-size: 105%;
     margin-bottom: 20px;
 }
 
@@ -117,6 +146,7 @@ h2:after {
     margin-top: 60px;
     margin-bottom:60px;
     font-weight: 300;
+    text-align: center;
 }
 
 .btn:link,
@@ -131,6 +161,7 @@ h2:after {
     transition: background-color 0.5s, border 0.5s, color 0.5s;
     background-color: #00bc3c;
 }
+
 .btn:hover,
 .btn:active{
     display: inline-block;
@@ -147,6 +178,10 @@ h2:after {
     top:50%;
     left:50%;
     transform: translate(-50%, -50%);
+}
+
+.header-web{
+    margin:30px 30px;
 }
 
 .header-javascript{
@@ -178,45 +213,22 @@ h2:after {
     padding-top: 15px;
 }
 
+/* --------------------- */
+/* HTML & CSS */
+/* --------------------- */
+
 
 /* --------------------- */
 /* JAVASCRIPT */
 /* --------------------- */
-
-.project-photo {
-    width: 100px;
-    height: auto;
-    border-radius: 500px;
-    -webkit-border-radius: 500px;
-    -moz-border-radius: 500px;
-    -ms-border-radius: 500px;
-    -o-border-radius: 500px;
-}
-
-.project-letter{
-    border: 2px solid #00bc3c;
-    -webkit-border-radius: 50px;
-    -moz-border-radius: 50px;
-    -ms-border-radius: 50px;
-    -o-border-radius: 50px;
-}
-
-.row p{
-    text-align: center;
-    margin-bottom: 30px;
+.javascript {
+    background-color: rgb(236, 236, 236);
 }
 
 /* --------------------- */
 /* PYTHON */
 /* --------------------- */
 
-.python {
-    background-color: rgb(236, 236, 236);
-}
-
-section .row{
-    margin-top: 40px;
-}
 
 /* --------------------- */
 /* FOOTER */
@@ -273,4 +285,28 @@ footer {
 
 span{
     color: #56ff81;
+}
+
+/* ANIMATION */
+
+.js--wp-1,
+.js--wp-2,
+.js--wp-3,
+.js--wp-4 {
+    opacity: 0;
+    animation-duration: 1s;
+}
+
+.js--wp-1.animated,
+.js--wp-2.animated,
+.js--wp-3.animated,
+.js--wp-4.animated{
+    offset: '50%';
+    opacity: 1;
+}
+
+.js,
+.py{
+    width:70px;
+    height: auto;
 }
